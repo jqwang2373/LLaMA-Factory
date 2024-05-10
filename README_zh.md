@@ -366,9 +366,16 @@ CUDA_VISIBLE_DEVICES=0 llamafactory-cli export examples/merge_lora/llama3_lora_s
 #### 使用本地环境
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 GRADIO_SHARE=1 llamafactory-cli webui
+export CUDA_VISIBLE_DEVICES=0
+export GRADIO_SERVER_PORT=7861 
+export GRADIO_SHARE=1 
+llamafactory-cli webui
 ```
-
+```bash
+export CUDA_VISIBLE_DEVICES=0 # Windows 使用 `set CUDA_VISIBLE_DEVICES=0`
+export GRADIO_SERVER_PORT=7860 # Windows 使用 `set GRADIO_SERVER_PORT=7860`
+python src/train_web.py # 或 python -m llmtuner.webui.interface
+```
 <details><summary>阿里云用户指南</summary>
 
 如果您在阿里云上使用 LLaMA Board 时遇到显示问题，请尝试在启动前使用以下命令设置环境变量：
