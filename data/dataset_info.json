@@ -1,11 +1,18 @@
 {
-  "pychrono": {
+  "pychrono_indentify": {
     "file_name": "pychrono_sft_en.json",
     "columns": {
       "prompt": "instruction",
       "query": "input",
-      "response": "output",
-      "history": "history"
+      "response": "output"
+    }
+  },
+  "pychrono_fea": {
+    "file_name": "pychrono_sft_fea.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
     }
   },
   "alpaca_en": {
