@@ -5,6 +5,9 @@
   "alpaca_en_demo": {
     "file_name": "alpaca_en_demo.json"
   },
+  "slack_qa": {
+    "file_name": "instruction_tuning_data.json"
+  },
   "alpaca_zh_demo": {
     "file_name": "alpaca_zh_demo.json"
   },
